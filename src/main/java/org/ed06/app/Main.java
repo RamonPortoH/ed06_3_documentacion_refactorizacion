@@ -12,10 +12,10 @@ public class Main {
     // Definimos constantes para las diferentes opciones del menú
     private static final int REGISTRAR_HABITACION = 1;
     private static final int LISTAR_HABITACIONES_DISPONIBLES = 2;
-    private static final int RESERVAR_HABITACION = 11;
-    private static final int LISTAR_RESERVAS = 12;
-    private static final int LISTAR_CLIENTES = 21;
-    private static final int REGISTRAR_CLIENTE = 22;
+    private static final int RESERVAR_HABITACION = 3;
+    private static final int LISTAR_RESERVAS = 4;
+    private static final int LISTAR_CLIENTES = 5;
+    private static final int REGISTRAR_CLIENTE = 6;
     private static final int SALIR = 0;
 
     public static void main(String[] args) {
@@ -147,14 +147,17 @@ public class Main {
         }
     }
 
+    /**
+     * Metodo que muestra el menú opciones correspondientes al programa
+     */
     private static void mostrarMenu() {
         System.out.println("Menú:");
         System.out.println("1. Registrar habitación");
         System.out.println("2. Listar habitaciones disponibles");
-        System.out.println("11. Reservar habitación");
-        System.out.println("12. Listar reservas");
-        System.out.println("21. Listar clientes");
-        System.out.println("22. Registrar cliente");
+        System.out.println("3. Reservar habitación");
+        System.out.println("4. Listar reservas");
+        System.out.println("5. Listar clientes");
+        System.out.println("6. Registrar cliente");
         System.out.println("0. Salir");
     }
 }
